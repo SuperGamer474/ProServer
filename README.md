@@ -8,8 +8,8 @@
 
 * `main.py` — the ProServer application (Flask API + tray UI).
 * `build.bat` — helper script to create a bundled executable using PyInstaller.
+* `icon.png` — the icon used by PyInstaller to create the executable.
 * `zsign.exe` — zsign executable by zhlynn.
-* `requirements.txt` — Python dependencies.
 
 > The main script automatically downloads `zsign` (if missing) to the user folder and exposes an `/api` endpoint that accepts files or URLs for `.ipa`, `.p12`, and `.mobileprovision`. It can either return the signed `.ipa` file directly (`type=file`) or host the signed IPA + manifest and return an `itms-services` link for OTA install (`type=install`).
 
